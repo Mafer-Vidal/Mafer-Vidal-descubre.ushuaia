@@ -1,0 +1,216 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.linear-white::after{
+    content:"";
+    display: block;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/**HEADER**/
+.header{
+    background-image: url(../imagenes/imagenHeader.jpg);
+    background-position: center;
+    background-size: cover;
+
+    nav {
+        font-family: 'Lobster', Arial, Helvetica, sans-serif;
+        font-size: 1.2rem; }
+  
+    #titleIndex{
+        font-family: 'Balsamiq Sans', cursive;
+        font-family: 'Roboto', sans-serif;
+        font-size: 120px;
+        padding-top:40px;
+        padding-left: 30px;
+
+    }
+    #titlePages{
+        font-family: 'Balsamiq Sans', cursive;
+        font-family: 'Roboto', sans-serif;
+        font-size: 80px;
+        padding-top:60px;
+    }           
+}
+
+/**index**/
+main{
+    section{
+        padding-bottom: 300px;
+    }
+      
+    /*CARDS*/
+    .card{
+        padding-bottom:0;
+        transition-duration: 0.8s;
+        clip-path:polygon(50% 0, 100% 0, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
+
+        .card-img-filter{
+            filter: brightness(0.7);
+        }
+    } 
+    .card-effect:hover .card{
+        clip-path:polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+        .card-img-overlay{
+            transform:scale(0.9);
+            transition-duration: 0.8s;
+           }
+    }
+    h1{
+        padding-top:70px;
+        font-size: 120px;
+    }
+    /*CAROUSEL*/
+    .carousel, .carousel-inner{
+        object-fit: scale-down;
+        background-position: center;
+        background-size:auto;
+        padding-left:60px ;
+        padding-right:60px ;
+        padding-bottom: 5px;
+        padding-top: 30px;
+      
+    }
+   
+    /**HISTORIA**/
+    h5{
+        font-size: 80px;
+        text-align: center;
+        font-weight:bold;
+        color:rgb(48, 48, 94);
+        
+    }
+       /*OPINIONES*/
+    .comentarios{
+        background-image: url(../imagenes/coment.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin: 0%;
+
+        .comentarios.linear-white::after{
+            top:0;
+        }
+
+      .comment_img{
+          --tamano:80px;
+          width: var(--tamano);
+          height: var(--tamano);
+          object-fit:cover;
+          border-radius: 50%;
+          box-shadow: 7px 7px 7px whitesmoke;
+          border: 5px ridge white;
+
+      }
+      .transform-turn{
+          transform: rotate(.5turn);
+      }  
+    }
+}   
+/*FOOTER*/
+#pieDePagina{  
+    text-align: center;
+    height: 300px;
+    padding-top: 20px;
+    background-color: rgb(61, 61, 83);    
+    .redes{
+        width: 200px;
+        height: 100px;
+    }
+
+}
+
+/*MAPS*/
+.containerMaps{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left:100px;
+}
+.containerPlano{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right:80px;
+    animation:aparecer 5s infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*EXPERIENCIAS*/
+.containerExp{
+    padding-top: 0px;
+    padding-bottom: 5px;
+   
+}
+.media-object-img{
+    --tamano:200px;
+    width: var(--tamano);
+    height: var(--tamano);
+    padding-right: 15px;
+}
+
+/*CONTACTO*/
+
+.headerContacto{
+    background-image: url(../imagenes/fcontacto.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 0px;
+}
+#titleContacto{
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    padding-top:60px;
+    padding-bottom:40px;
+
+}   
+.contacto{
+    background-image:url(../imagenes/fcontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.form{
+    margin-top: 0%;
+    background: rgba(65, 65, 64, 0.5);
+    color: #fff;
+    align-content: center;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 5px; 
+    box-shadow: 7px 14px 40px #1b1b1b;
+    background-position: center;
+  }
+  .headerContacto{
+    background-image:url(../imagenes/fcontacto.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:0px;
+}
+
+
+
+  .form-control{
+  background: rgb(241, 239, 239);
+  }
+  input{
+    background: rgb(224, 222, 222);
+  }
